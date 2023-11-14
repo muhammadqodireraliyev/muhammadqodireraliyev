@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+.in {
+    background-color: black;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.box {
+
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.imput-text {
+    color: white;
+}
+
+input {
+    display: none;
+
+}
+
+.box-img {
+    display: none;
+    background-color: rgb(245, 245, 245);
+}
+
+input:checked~.box>.box-img {
+    display: block;
+}
+
+input:checked~.box {
+    box-shadow: rgba(6, 20, 221, 0.3) 0px 19px 38px, rgba(62, 15, 230, 0.22) 0px 15px 12px;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+button:checked{
+    color: blue;
+}
